@@ -29,7 +29,7 @@ class Create extends Component
         $this->dispatchBrowserEvent('show-message', ['type' => 'success', 'message' => __('CreatedMessage', ['name' => __('Logo') ])]);
         
         if($this->getPropertyValue('file_path') and is_object($this->file_path)) {
-            $this->file_path = $this->getPropertyValue('file_path')->store('storage/uploads/logo');
+            $this->file_path = $this->getPropertyValue('file_path')->store('uploads/logo');
         }
 
         Logo::create([
