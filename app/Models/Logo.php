@@ -14,11 +14,10 @@ class Logo extends Model
     public function getLogoUrlAttribute()
 {
     if (!$this->file_path) {
-        return asset('images/default-logo.png');  // Assuming you have a default logo
+        return asset('images/default-logo.png'); // Fallback to a default logo
     }
-
-    // Ensure the path starts with a slash if not already present
-    $path = $this->file_path[0] === '/' ? $this->file_path : '/' . $this->file_path;
-    return asset('storage/uploads/logo' . $path);
+    return asset('storage/' . $this->file_path);
 }
+
+
 }

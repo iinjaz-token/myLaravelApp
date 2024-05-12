@@ -73,7 +73,7 @@ class LogoComponent implements CRUDComponent
     $filename = $file->hashName();
 
     // Ensure the file is stored in 'storage/uploads/logo'
-    $path = $file->storeAs('uploads/logo', $filename, 'storage');
+    $path = $file->storeAs('uploads/logo', $filename, 'public');
 
     // Save or update the logo path in the database
     $logo = Logo::firstOrNew();  // Assuming there's only one logo record
