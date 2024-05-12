@@ -58,32 +58,29 @@ class LogoComponent implements CRUDComponent
     public function storePaths()
     {
         return [
-            'file_path' => 'public/uploads/logo',  // Store the files in public/uploads/logo
+            'file_path' => 'uploads/logo',  // Store the files storage\uploads\logo
         ];
     }
 
     // Custom update method for handling file upload
     public function updateLogo(Request $request)
-    {
-        $request->validate([
-            'file_path' => 'required|image|max:2048', // Validation rules
-        ]);
+{
+    $request->validate([
+        'file_path' => 'required|image|max:2048',
+    ]);
 
-        // Retrieve the uploaded file
-        $file = $request->file('file_path');
-        
-        // Generate a unique filename
-        $filename = $file->hashName();
+    $file = $request->file('file_path');
+    $filename = $file->hashName();
 
-        // Store the file in the public/uploads/logo directory
-        $path = $file->storeAs('public/uploads/logo', $filename);
+    // Ensure the file is stored in 'storage/uploads/logo'
+    $path = $file->storeAs('uploads/logo', $filename, 'storage');
 
-        // Save or update the logo path in the database
-        $logo = Logo::firstOrNew(); // Assuming there's only one logo record
-        $logo->file_path = 'uploads/logo/' . $filename; // Store relative path
-        $logo->save();
+    // Save or update the logo path in the database
+    $logo = Logo::firstOrNew();  // Assuming there's only one logo record
+    $logo->file_path = $path;  // Save the path as 'uploads/logo/filename.png'
+    $logo->save();
 
-        // Redirect back with success message
-        return back()->with('success', 'Logo updated successfully!');
-    }
+    return back()->with('success', 'Logo updated successfully!');
+}
+
 }

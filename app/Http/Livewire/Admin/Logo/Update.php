@@ -36,7 +36,7 @@ class Update extends Component
         $this->dispatchBrowserEvent('show-message', ['type' => 'success', 'message' => __('UpdatedMessage', ['name' => __('Logo') ]) ]);
         
         if($this->getPropertyValue('file_path') and is_object($this->file_path)) {
-            $this->file_path = $this->getPropertyValue('file_path')->store('public/uploads/logo');
+            $this->file_path = $this->getPropertyValue('file_path')->store('uploads/logo');
         }
 
         $this->logo->update([
