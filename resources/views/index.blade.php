@@ -72,8 +72,8 @@
                     <div id="logo">
 
                        <!--Logo that is shown on the banner-->
-<img src="{{ asset('storage/uploads/logo/' . optional(App\Models\Logo::first())->file_path) }}" alt="Logo">
-<!--End of Banner Logo-->
+                       <img src="{{ $logoUrl }}" alt="Logo">
+                       <!--End of Banner Logo-->
 
 
                         <!--The Logo that is shown on the sticky Navigation Bar-->
