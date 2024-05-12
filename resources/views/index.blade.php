@@ -52,7 +52,7 @@
 
     <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
         <div id="header" class="nav-collapse">
-        @if (Route::has('login'))
+        <!-- @if (Route::has('login'))
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
                     @auth
                         <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
@@ -64,7 +64,7 @@
                         @endif
                     @endauth
                 </div>
-            @endif
+            @endif -->
             <div class="row clearfix">
                 <div class="col-1">
 
@@ -397,10 +397,12 @@
 
                 <div class="col-2-3">
 
-                    <a href="#" class="col-3">
-                        <img src="images/company-images/company-logo1.png" alt="Company"/>
-                        <div class="client-overlay"><span>Tree</span></div>
-                    </a>
+                @foreach ($brands as $brand)
+    <a href="#" class="col-3">
+        <img src="{{ asset('storage/' . $brand->file_path) }}" alt="{{ $brand->name }}" />
+        <div class="client-overlay"><span>{{ $brand->name }}</span></div>
+    </a>
+@endforeach
                     <a href="#" class="col-3">
                         <img src="images/company-images/company-logo2.png" alt="Company"/>
                         <div class="client-overlay"><span>Fingerprint</span></div>
