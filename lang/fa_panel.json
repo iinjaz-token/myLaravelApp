@@ -85,5 +85,9 @@
     "Header": "Header",
     "Headers": "Headers",
     "Brand": "Brand",
-    "Brands": "Brands"
+    "Brands": "Brands",
+    "Title": "Title",
+    "Sub_title": "Sub_title",
+    "Titelbrand": "Titelbrand",
+    "Titelbrands": "Titelbrands"
 }

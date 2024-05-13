@@ -379,18 +379,17 @@
         </aside>
         <!--End of Testimonials-->
 
-        <!--Clients-->
-        <section id="clients" class="scrollto clearfix">
+
+ <!--Clients-->
+ <section id="clients" class="scrollto clearfix">
             <div class="row clearfix">
 
                 <div class="col-3">
 
                     <div class="section-heading">
                         <h3>TRUST</h3>
-                        <h2 class="section-title">Companies who use our services</h2>
-                        <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
+                        <h2 class="section-title">{{ $title }}</h2>
+                        <p class="section-subtitle">{{ $subTitle }}</p>
                     </div>
 
                 </div>
@@ -398,11 +397,11 @@
                 <div class="col-2-3">
 
                 @foreach ($brands as $brand)
-    <a href="#" class="col-3">
-        <img src="{{ asset('storage/' . $brand->file_path) }}" alt="{{ $brand->name }}" />
-        <div class="client-overlay"><span>{{ $brand->name }}</span></div>
-    </a>
-@endforeach
+                    <a href="#" class="col-3">
+                         <img src="{{ asset('storage/' . $brand->file_path) }}" alt="{{ $brand->name }}" />
+                         <div class="client-overlay"><span>{{ $brand->name }}</span></div>
+                    </a>
+                @endforeach
                     <a href="#" class="col-3">
                         <img src="images/company-images/company-logo2.png" alt="Company"/>
                         <div class="client-overlay"><span>Fingerprint</span></div>
