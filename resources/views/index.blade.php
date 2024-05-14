@@ -447,16 +447,16 @@
         <!--End of Clients-->
 
         <!--Pricing Tables-->
-        <section id="pricing" class="secondary-color text-center scrollto clearfix ">
+        <!-- <section id="pricing" class="secondary-color text-center scrollto clearfix ">
             <div class="row clearfix">
 
                 <div class="section-heading">
                     <h3>YOUR CHOICE</h3>
                     <h2 class="section-title">We have the right package for you</h2>
-                </div>
+                </div> -->
 
                 <!--Pricing Block-->
-                <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+                <!-- <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="pricing-block-content">
                         <h3>Personal</h3>
                         <p class="pricing-sub">The standard version</p>
@@ -473,11 +473,11 @@
                         </ul>
                         <a href="#" class="button">BUY TODAY</a>
                     </div>
-                </div>
+                </div> -->
                 <!--End Pricing Block-->
 
                 <!--Pricing Block-->
-                <div class="pricing-block featured col-3 wow fadeInUp" data-wow-delay="0.6s">
+                <!-- <div class="pricing-block featured col-3 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="pricing-block-content">
                         <h3>Student</h3>
                         <p class="pricing-sub">Most popular choice</p>
@@ -494,11 +494,11 @@
                         </ul>
                         <a href="#" class="button">BUY TODAY</a>
                     </div>
-                </div>
+                </div> -->
                 <!--End Pricing Block-->
 
                 <!--Pricing Block-->
-                <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.8s">
+                <!-- <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.8s">
                     <div class="pricing-block-content">
                         <h3>Business</h3>
                         <p class="pricing-sub">For the whole team</p>
@@ -515,13 +515,20 @@
                         </ul>
                         <a href="#" class="button">BUY TODAY</a>
                     </div>
-                </div>
+                </div> -->
                 <!--End Pricing Block-->
 
-            </div>
-        </section>
+            <!-- </div>
+        </section> -->
         <!--End of Pricing Tables-->
 
+        <!--start of contact us Tables-->
+        <!--End of contact us Tables-->
+
+        <!--start of google map Tables-->
+        @include('google-map')
+        
+        <!--End of google map Tables-->
     </main>
     <!--End Main Content Area-->
 
@@ -580,6 +587,7 @@
 <script src="js/images-loaded.min.js"></script>
 <script src="js/lightbox.min.js"></script>
 <script src="js/site.js"></script>
+
 
 <!-- Livewire Scripts -->
 @livewireScripts

@@ -138,7 +138,7 @@
         <!-- End Container fluid  -->
 
         <!-- footer -->
-        <footer class="footer text-center text-muted">Adminmart Template, <a href="https://github.com/rezaamini-ir/laravel-easypanel">EasyPanel</a> Package.</footer>
+        <footer class="footer text-center text-muted">Rashid AL Thawadi</footer>
         <!-- End footer -->
     </div>
 </div>
