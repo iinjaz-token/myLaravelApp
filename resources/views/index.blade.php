@@ -401,11 +401,11 @@
                 <div class="col-2-3">
 
                 @foreach ($brands as $brand)
-    <a href="#" class="col-3">
-        <img src="{{ asset('storage/' . $brand->file_path) }}" alt="{{ $brand->name }}" />
-        <div class="client-overlay"><span>{{ $brand->name }}</span></div>
-    </a>
-@endforeach
+                    <a href="#" class="col-3">
+                         <img src="{{ asset('storage/' . $brand->file_path) }}" alt="{{ $brand->name }}" />
+                         <div class="client-overlay"><span>{{ $brand->name }}</span></div>
+                    </a>
+                @endforeach
                     <a href="#" class="col-3">
                         <img src="images/company-images/company-logo2.png" alt="Company"/>
                         <div class="client-overlay"><span>Fingerprint</span></div>
