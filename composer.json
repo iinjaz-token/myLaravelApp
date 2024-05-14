@@ -11,7 +11,7 @@
         "laravel/jetstream": "^4.3",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
-        "livewire/livewire": "^2.3",
+        "livewire/livewire": "^2.4",
         "rezaamini-ir/laravel-easypanel": "^2.3"
     },
     "require-dev": {

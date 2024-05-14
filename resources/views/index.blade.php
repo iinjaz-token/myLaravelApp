@@ -28,6 +28,9 @@
 
     <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+    <!-- Livewire Styles -->
+    @livewireStyles
 </head>
 <body>
 
@@ -578,6 +581,8 @@
 <script src="js/lightbox.min.js"></script>
 <script src="js/site.js"></script>
 
+<!-- Livewire Scripts -->
+@livewireScripts
 
 </body>
 </html>
