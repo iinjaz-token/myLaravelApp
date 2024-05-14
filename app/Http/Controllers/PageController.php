@@ -15,7 +15,6 @@ class PageController extends Controller
         $logo = Logo::latest()->first(); // Fetch the latest logo entry
         $brands = Brand::all();
 
-
         return view('index', [
             'headerText' => $header ? $header->name : 'Default Header',
             'logoUrl' => $logo ? $logo->getLogoUrlAttribute() : asset('path/to/default/logo.png'), // Provide a default logo path if none is found

@@ -28,6 +28,9 @@
 
     <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+    <!-- Livewire Styles -->
+    @livewireStyles
 </head>
 <body>
 
@@ -398,11 +401,11 @@
                 <div class="col-2-3">
 
                 @foreach ($brands as $brand)
-    <a href="#" class="col-3">
-        <img src="{{ asset('storage/' . $brand->file_path) }}" alt="{{ $brand->name }}" />
-        <div class="client-overlay"><span>{{ $brand->name }}</span></div>
-    </a>
-@endforeach
+                    <a href="#" class="col-3">
+                         <img src="{{ asset('storage/' . $brand->file_path) }}" alt="{{ $brand->name }}" />
+                         <div class="client-overlay"><span>{{ $brand->name }}</span></div>
+                    </a>
+                @endforeach
                     <a href="#" class="col-3">
                         <img src="images/company-images/company-logo2.png" alt="Company"/>
                         <div class="client-overlay"><span>Fingerprint</span></div>
@@ -578,6 +581,8 @@
 <script src="js/lightbox.min.js"></script>
 <script src="js/site.js"></script>
 
+<!-- Livewire Scripts -->
+@livewireScripts
 
 </body>
 </html>
